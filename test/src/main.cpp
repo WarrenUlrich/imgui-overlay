@@ -110,21 +110,21 @@ int main(int argc, char **args) {
 
   std::cout << "Window found: " << found << std::endl;
 
-  auto overlay = imgui_overlay(found);
-  overlay.register_callback([]() {
-    ImGui::Begin("Hello, world!");
-    ImGui::Text("This is some useful text.");
-    ImGui::End();
-  });
+  // auto overlay = imgui_overlay(found);
+  // overlay.register_callback([]() {
+  //   ImGui::Begin("Hello, world!");
+  //   ImGui::Text("This is some useful text.");
+  //   ImGui::End();
+  // });
 
-  if (!overlay.initialize()) {
-    std::cout << "Failed to initialize overlay.\n";
-    return 1;
-  }
+  // if (!overlay.initialize()) {
+  //   std::cout << "Failed to initialize overlay.\n";
+  //   return 1;
+  // }
 
-  while(overlay.is_running()) {
-    Sleep(16);
-  }
+  // while(overlay.is_running()) {
+  //   Sleep(16);
+  // }
   
   return 0;
 }
